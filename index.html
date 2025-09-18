@@ -1,29 +1,94 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test Webstránka</title>
+    <title>Corrida Records</title>
+    <link rel="icon" type="image/png" href="icon.png">
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f90;
+        }
+
+        main {
             text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
+            padding: 80px 20px;
         }
+
         h1 {
-            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
         button {
-            padding: 10px 20px;
+            padding: 12px 24px;
             font-size: 16px;
+            background-color: #f90;
+            border: none;
+            border-radius: 4px;
+            color: #000;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffa31a;
         }
     </style>
 </head>
 <body>
-    <h1>Vitaj na testovacej stránke!</h1>
-    <p>Toto je jednoduchý HTML test.</p>
-    <button onclick="alert('Funguje to!')">Klikni ma</button>
+
+    <header>
+        <div class="logo">Corrida Records</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="artists.html">Our Artists</a>
+            <a href="#">Collaborate with Us</a>
+            <a href="histroy.html">History</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Corrida Records</h1>
+        <p>This is a simple landing page for a creative music label.</p>
+        <button onclick="alert('Let’s collaborate!')">Click Me</button>
+    </main>
+
 </body>
 </html>
-
