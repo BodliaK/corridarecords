@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collaborate – Corrida Records</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f90;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 80px 30px 60px 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            background-color: #111;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px #f90;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            background-color: #f90;
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffa31a;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 60px 20px 40px 20px;
+            }
+
+            form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Corrida Records</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="artists.html">Our Artists</a>
+            <a href="collaborate.html">Collaborate with Us</a>
+            <a href="history.html">History</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Collaborate with Corrida Records</h1>
+        <form action="https://formspree.io/f/mnnbkkjg" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="artistname">Artist Name</label>
+                <input type="text" id="artistname" name="Artist Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" name="Genre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="City" required>
+            </div>
+
+             <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" id="state" name="State" required>
+            </div>
+
+            <div class="form-group">
+                <label for="link">Link to Your Music</label>
+                <input type="url" id="link" name="Music Link" placeholder="https://..." required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+</body>
+</html>
